@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 
 const useDetails = (url) => {
-    const [pokemonDetails, setPokemonDetails] = useState([]);
+    const [pokemon, setPokemon] = useState([]);
 
     useEffect(() => {
         fetch(url)
         .then(res => res.json())
         .then(data => {
-            setPokemonDetails(data);
+            setPokemon(data);
         })
     },[])
 
-    return [pokemonDetails, setPokemonDetails];
+    return [pokemon, setPokemon];
 };
 
 export default useDetails;
