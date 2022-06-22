@@ -4,11 +4,11 @@ const DetailsModal = ({ modal }) => {
 
     return (
         <div>
-            <input type="checkbox" id="details-modal" className="modal-toggle" />
+            <input type="checkbox" id="details-modal" className="modal-toggle"  />
             <div className="modal">
                 <div className="modal-box relative">
                     <label htmlFor="details-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                    <div className="card card-compact shadow-x px-4">
+                    <div className="card card-compact shadow-x px-4" data-aos="flip-up" data-aos-offset="300"data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="80">
                         <div>
                             <h2 className="card-title text-2xl capitalize text-purple-500 border-b-2 border-b-purple-500 pb-4">{modal.forms?.[0]?.name}</h2>
                         </div>

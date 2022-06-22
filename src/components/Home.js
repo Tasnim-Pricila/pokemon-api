@@ -34,7 +34,8 @@ const Home = () => {
                     <button type="btn" className='py-1 border-2 px-4 border-purple-500 rounded hover:bg-purple-500 hover:text-white hover:duration-500 ml-1' onClick={handleSubmit} > Search </button>
                 </div>
             </div>
-            <div className='grid md:grid-cols-4 gap-4 items-center md:px-20 px-4 mt-4'>
+            <div className='grid md:grid-cols-4 gap-4 items-center md:px-20 px-4 mt-4'
+            data-aos="flip-down" data-aos-offset="300"data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos-delay="80"  data-aos-once='true'>
                 {
                     pokemon.length > 0 ?
                         pokemon.slice(0, 12).map((p, index) =>
